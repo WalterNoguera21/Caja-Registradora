@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja Registradora</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="encabezado"><img id="icono"src="imagenes/pngwing.com.png" alt="Imagen del menu" >
+            <h1>LISTO EL POLLO</h1>
+        </div>
+   
+
+
+
+        <div class="content">
+          
+            <div class="productos">
+                <h2>PRODUCTOS</h2>
+                <select id="productList">
+                    <option value="" disabled selected>Seleccione un producto</option>
+                    <option value=" POLLO FRITO" data-price="25000">COMBO POLLO - $25.000</option>
+                    <option value="POLLO FRITO GASEOSA" data-price="35000">COMBO DE POLLO GASEOSA - $35.000</option>
+                    <option value="POLLO FRITO GASEOSA Y PAPAS" data-price="38000">COMBO DE POLLO GASEOSA Y PAPAS - $40.000</option>
+                    <option value="COMBO FAMILIAR" data-price="45000">COMBO FAMILIAR - $45.000</option>
+                    <option value=" GASEOSA" data-price="6000">GASEOSA- $6.000</option>
+                    <option value=" COMBO POLLO ASADO GASEOSA" data-price="32000">POLLO ASADO - $32.000</option>
+                    <option value=" COMBO POLLO ASADO GASEOSA Y PAPAS" data-price="32000">POLLO ASADO GASEOSA Y PAPAS - $35.000</option>
+
+                </select>
+                <img src="imagenes/pollo comida.jpg" alt="Imagen del menu" style="width: 100%; height: auto; border-radius: 8px; margin: 10px;">
+        
+            </div>
+
+            <div class="carrito-factura">
+                <h2>CARRITO</h2>
+                <table id="cart">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <div class="cart-buttons">
+                    <button id="buyButton">COMPRAR</button>
+                    <button id="clearButton">ELIMINAR TODO</button>
+                </div>
+
+                <h2>Factura</h2>
+                <table id="Factura">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
